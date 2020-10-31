@@ -18,7 +18,7 @@ client.config = config;
 
 // We listen for client's ready event.
 client.on("ready", () => {
-  console.log(`Bot is ready. (${client.guilds.cache.size} Guilds - ${client.channels.cache.size} Channels - ${bot.guilds.cache.reduce((a, g) => a + g.memberCount, 0)} Users)`);
+  console.log(`Bot is ready. (${client.guilds.cache.size} Guilds - ${client.channels.cache.size} Channels - ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)} Users)`);
   Dashboard(client);
 });
 
